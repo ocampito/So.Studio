@@ -1,0 +1,215 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font: 1em/var(--body-leading) sans-serif;
+  }
+  
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+  }
+
+@font-face {
+    font-family: "Neue-Rbold";
+    src: url("./font/neueregrade-bold.otf"),
+         url("./font/neueregrade-bold.ttf"),
+         url("./font/neueregrade-bold.woff");
+
+}
+
+@font-face {
+    font-family: "Neue-regular";
+    src: url("./font/neueregrade-regular.otf"),
+         url("./font/neueregrade-regular.ttf"),
+         url("./font/neueregrade-regular.woff");
+
+}
+
+html {
+    font-family: "Neue-regular" , sans-serif ;
+    font-size: 16px;
+}
+
+/* Header */
+
+li  {
+    
+    display: inline;
+    margin: 7rem;  
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+.navbar {
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+
+/* title */
+
+.title {
+    font-size: 12.5vw;
+}
+
+h1{
+   margin-bottom: 0.5rem; 
+}
+
+/* main content */
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+   
+   
+
+
+}
+
+.project-title h2{
+   font-size: 1.2rem; 
+   margin: 1rem;
+}
+
+.image-grid{
+    display: flex;
+    gap: 0.5rem;
+  
+    
+    
+    
+    
+    
+
+}
+
+
+.image-grid .imgbasis{
+
+  flex-basis: 7000px;
+    
+    
+    
+    
+}
+/* me */
+
+.me {
+    
+    display: flex;
+    justify-content: end;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    border-top: 1px solid black;
+    padding: 3rem;
+}
+
+.me h2 {
+    margin-right: 2rem;
+}
+
+.me p{
+    margin-right: 8rem;
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+/* collab */
+.collab{
+    font-size: 7vw;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    
+}
+
+footer h2 {
+    margin: 1rem;
+}
+
+/* contact */
+
+
+.contact {
+    text-align: left;
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+    
+}
+
+.contact .tite {
+    font-family: "Neue-Rbold";
+}
+
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: black;
+    text-decoration: underline;
+    
+}
+
+.title2 {
+    font-size: 12.5vw;
+    border-bottom: 1px solid black;
+    margin-bottom: 8rem;
+}
+
+
+
+
+@media only screen and (max-width: 920px) {
+
+    .image-grid img{
+        margin: 0.1rem;
+        width: 100%;
+    }   
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  
+    .me p{
+        margin-right: 0rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+
+    .me {
+        flex-wrap: wrap;
+    }
+   
+
+    .title {
+        font-size: 12.7vw;
+    }
+
+
+}
